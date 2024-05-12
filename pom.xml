@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.patecan</groupId>
-    <artifactId>kiotviet</artifactId>
+    <artifactId>webhook-receiver-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>kiotviet</name>
-    <description>kiotviet</description>
+    <name>webhook-receiver-service</name>
+    <description>Webhook Receiver Service</description>
     <properties>
         <java.version>17</java.version>
         <spring-cloud.version>2023.0.1</spring-cloud.version>
