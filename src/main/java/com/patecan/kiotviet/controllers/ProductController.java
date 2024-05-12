@@ -9,12 +9,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.http.*;
 
-@RestController
-@RequestMapping("/webhooks/products")
+@RestController("/webhooks/products")
 public class ProductController {
     Logger logger = LoggerFactory.getLogger(ProductController.class);
 
-    @PostMapping
+    @PostMapping("/update")
     public ResponseEntity<String> listenProductChange(@RequestBody String payload) {
         logger.info(payload);
         System.out.println(payload);
